@@ -1,0 +1,366 @@
+@import url('fonts.css');
+
+/*
+COLORS:
+anthracite: #131e26;
+blue: #0011e8;
+red: #ea0632;
+grey: #eaeaea;
+*/
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Butler';
+   text-rendering: optimizeLegibility;
+}
+li {
+   list-style: none;
+}
+a {
+   text-decoration: none;
+}
+
+html {
+   background-color: #fff;
+   color: #131e26;
+}
+body {
+   margin: 0;
+}
+
+header,
+section {
+   max-width: 800px;
+   margin: 30px auto;
+}
+
+header {
+   height: 60vh;
+   overflow: hidden;
+   margin: 0 auto;
+}
+
+footer {
+   max-width: 800px;
+   margin: 20px auto 0 auto;
+}
+
+.ribbon {
+   height: 25px;
+   background-color: #131e26;
+}
+
+.logo_and_date {
+   height: 50vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 15px;
+}
+.logo,
+.date {
+   margin: 10px 0;
+}
+.logo img {
+   height: 160px;
+}
+.date img {
+   height: 70px;
+   margin-top: 10px;
+}
+.nav-bar {
+   display: flex;
+   justify-content: space-between;
+   margin: 0 34px;
+}
+.nav-bar li {
+   display: inline-block;
+   font-size: 12px;
+}
+.nav-bar a {
+   font-family: 'Poppins';
+   font-weight: 500;
+   padding-left: 10px;
+}
+.lang a {
+   font-family: 'Simplon Mono';
+   padding-left: 0;
+   padding-right: 5px;
+}
+
+.btn:link,
+.btn:visited {
+   text-decoration: none;
+   color: #131e26;
+}
+
+.btn:hover,
+.btn:active {
+   color: rgba(0, 17, 232);
+}
+
+.highlight {
+   margin: 0 auto;
+}
+.hero {
+   height: 530px;
+   background-image: url(img/hero_img_2.jpg);
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.blue_box {
+   height: 90%;
+   width: 93%;
+   background-color: rgba(0, 17, 232, 0.8);
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+h5 {
+   font-family: 'Poppins';
+   text-align: center;
+   font-weight: 500;
+   letter-spacing: 0.5px;
+}
+.story {
+   text-transform: uppercase;
+   font-weight: 300;
+   margin-top: 20px;
+}
+.hosts {
+   margin-bottom: 14px;
+   font-size: 13px;
+}
+.hero_text {
+   max-width: 400px;
+   margin-left: 80px;
+}
+h1 {
+   font-size: 42px;
+   margin-bottom: 20px;
+}
+p {
+   font-size: 18px;
+}
+
+.intro {
+   display: flex;
+   justify-content: center;
+   align-items: stretch;
+}
+.about {
+   width: 57%;
+   /* background-color: red; */
+   display: block;
+   /* text-align: justify; */
+   padding-left: 30px;
+   padding-right: 40px;
+}
+h4 {
+   font-size: 12px;
+   font-family: 'Poppins';
+   text-align: justify;
+   font-weight: 300;
+   letter-spacing: 0.5px;
+}
+h2 {
+   font-size: 32px;
+   padding: 30px 40px 30px 0;
+}
+.new_article {
+   text-align: left;
+   line-height: 22px;
+}
+.check {
+   text-align: left;
+   padding-top: 20px;
+   font-weight: 600;
+   font-size: 12px;
+   letter-spacing: 0;
+}
+.card_join {
+   width: 43%;
+   background-color: #131e26;
+   color: #fff;
+   font-size: 35px;
+   font-family: 'Poppins';
+   font-weight: 600;
+   text-align: center;
+   padding: 60px 20px;
+   line-height: 55px;
+}
+
+.card_join span {
+   font-size: 40px;
+   font-family: 'Poppins';
+   font-weight: 600;
+   text-align: center;
+   text-transform: uppercase;
+   line-height: 100px;
+}
+.artists {
+   display: flex;
+   justify-content: space-between;
+}
+
+.card {
+   width: 32%;
+   padding: 30px;
+   height: 400px;
+}
+.maestros_name {
+   background-color: #131e26;
+   color: #fff;
+   font-size: 35px;
+   font-family: 'Poppins';
+   font-weight: 600;
+   text-transform: capitalize;
+   letter-spacing: 0.5px;
+   line-height: 47px;
+   padding-top: 50px;
+   position: relative;
+}
+.name-1 {
+   text-align: left;
+}
+.name-2 {
+   text-align: right;
+}
+.accent::after {
+   content: '';
+   height: 45px;
+   background-color: #ea0632;
+   position: absolute;
+   z-index: 0;
+}
+.accent-1::after {
+   left: -30px;
+   width: 230px;
+}
+.maestros_name span {
+   z-index: 999;
+   position: absolute;
+   font-family: 'Poppins';
+   text-transform: capitalize;
+}
+.maestros_pic {
+   background-image: url(img/RoxSeb.jpg);
+   background-position: center;
+   background-color: blanchedalmond;
+   background-size: 600px;
+}
+.maestros_about {
+   background-color: #eaeaea;
+}
+.article_title {
+   font-size: 19px;
+}
+.article_body {
+   font-size: 14px;
+   font-weight: 400;
+}
+.banner {
+   background-color: #131e26;
+   height: 45px;
+   color: #fff;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   letter-spacing: 1px;
+}
+.banner div {
+   font-family: 'Simplon Mono';
+   font-size: 14px;
+}
+.maestros_pic-2 {
+   background-image: url(img/AldDieg.jpg);
+   background-position: center;
+   background-color: blanchedalmond;
+   background-size: 340px;
+}
+.accent-2::after {
+   right: -30px;
+   top: 100px;
+   width: 225px;
+}
+.ort {
+   right: 27px;
+}
+.text_q {
+   background-color: #0011e8;
+   color: #fff;
+   padding-top: 60px;
+   font-size: 30px;
+   position: relative;
+}
+.text_q a {
+   font-family: 'Poppins';
+   font-weight: 500;
+   letter-spacing: 0.5px;
+   color: #fff;
+   display: block;
+   font-size: 11px;
+   position: absolute;
+   bottom: 7px;
+   left: 44px;
+}
+.hero_2 {
+   height: 350px;
+   background-image: linear-gradient(to bottom, rgba(0, 17, 29, 0.5), rgba(0, 3, 5, 0.7)),
+      url(img/hero_img_1.jpg);
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+   font-family: 'Poppins';
+   font-weight: 600;
+   letter-spacing: 0.5px;
+   font-size: 50px;
+}
+
+.friday {
+   background-color: #eaeaea;
+}
+.we {
+   background-color: #131e26;
+}
+.nav-footer ul {
+   display: flex;
+   justify-content: flex-end;
+   padding-bottom: 20px;
+}
+.nav-footer a {
+   color: #fff;
+   font-family: 'Poppins';
+   font-weight: 500;
+   letter-spacing: 0.5px;
+   font-size: 14px;
+   padding-left: 15px;
+}
+.email {
+   font-family: 'Simplon Mono';
+   font-size: 16px;
+   text-align: center;
+   letter-spacing: 3px;
+   margin-bottom: 10px;
+}
+.day {
+   text-align: center;
+   font-family: 'Poppins';
+   font-weight: 700;
+   letter-spacing: 0.5px;
+   font-size: 14px;
+}
+.we {
+   color: #fff;
+}
