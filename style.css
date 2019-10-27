@@ -46,14 +46,14 @@ footer {
    max-width: 1000px;
    margin: 20px auto 0 auto;
 }
+
 #ScrollToTop {
    position: fixed;
-   bottom: 40px;
-   right: 50px;
-   background-color: #131e26;
-   background-color: rgb(19, 30, 38, 0.92);
-   width: 50px;
-   height: 50px;
+   bottom: 20px;
+   margin-left: 1020px;
+   background-color: rgb(19, 30, 38, 0.8);
+   width: 40px;
+   height: 40px;
    border-radius: 50%;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
    outline: none;
@@ -61,9 +61,11 @@ footer {
    cursor: pointer;
    border: none;
    padding-bottom: 6px;
+   z-index: 9999;
 }
 .fa-chevron-up {
-   font-size: 25px;
+   display: block;
+   font-size: 20px;
 }
 .ribbon {
    height: 35px;

@@ -1,7 +1,7 @@
 console.log('jhashhah');
-
 const btnScrollToTop = document.getElementById('ScrollToTop');
 
+/*
 btnScrollToTop.addEventListener('click', () => {
    window.scrollTo({
       top: 0,
@@ -9,6 +9,7 @@ btnScrollToTop.addEventListener('click', () => {
       behavior: 'smooth'
    });
 });
+*/
 
 $(document).ready(function() {
    $('.js--scroll-to-maestros').click(function() {
@@ -35,6 +36,11 @@ $(document).ready(function() {
       },
       { offset: '70px' }
    );
+
+   /* -------------------- SCROLL TO TOP BUTTON ----------------------------------- */
+   btnScrollToTop.addEventListener('click', () => {
+      $('html, body').animate({ scrollTop: 0 }, 'slow');
+   });
 });
 
 /* var waypoint = new Waypoint({
