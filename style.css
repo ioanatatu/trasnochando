@@ -37,7 +37,7 @@ section {
 }
 
 header {
-   height: 600px;
+   height: 530px;
    overflow: hidden;
    margin: 0 auto;
 }
@@ -71,7 +71,7 @@ footer {
 }
 
 .logo_and_date {
-   height: 525px;
+   height: 460px;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -79,13 +79,13 @@ footer {
 }
 .logo,
 .date {
-   margin: 30px 0;
+   margin: 20px 0;
 }
 .logo img {
-   height: 240px;
+   height: 230px;
 }
 .date img {
-   height: 100px;
+   height: 90px;
    margin-top: 10px;
 }
 .nav {
