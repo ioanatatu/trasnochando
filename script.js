@@ -25,16 +25,29 @@ $(document).ready(function() {
       );
    });
 
-   document.querySelector('.logo');
    $('.js--section-highlight').waypoint(
       function(direction) {
          if (direction == 'down') {
             $('nav').addClass('sticky');
+            $('.sticky .nav').fadeTo('slow', 0.92);
          } else {
+            $('.sticky .nav').css('opacity', '0');
             $('nav').removeClass('sticky');
          }
       },
       { offset: '70px' }
+   );
+
+   $('.js--section-highlight').waypoint(
+      function(direction) {
+         if (direction == 'down') {
+            $('#ScrollToTop').fadeTo('slow', 0.8);
+         } else {
+            // $('#ScrollToTop').fadeTo('slow', 0.8);
+            $('#ScrollToTop').css('opacity', '0');
+         }
+      },
+      { offset: '300px' }
    );
 
    /* -------------------- SCROLL TO TOP BUTTON ----------------------------------- */

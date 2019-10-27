@@ -62,6 +62,7 @@ footer {
    border: none;
    padding-bottom: 6px;
    z-index: 9999;
+   opacity: 0;
 }
 .fa-chevron-up {
    display: block;
@@ -127,15 +128,14 @@ footer {
    align-items: center;
    width: 1000px;
    height: 60px;
-   z-index: 9999;
-}
-.sticky .nav {
-   background-color: rgb(19, 30, 38, 0.92);
+   background-color: rgb(19, 30, 38);
    position: fixed;
    top: 0;
    display: flex;
    margin: 0;
    padding: 0 34px;
+   opacity: 0;
+   z-index: 9999;
 }
 
 .sticky .lang a,
