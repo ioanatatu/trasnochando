@@ -1,4 +1,6 @@
-console.log('jhashhah');
+const lg = console.log;
+
+// selecting all elements
 const btnScrollToTop = document.getElementById('ScrollToTop');
 
 /*
@@ -12,6 +14,12 @@ btnScrollToTop.addEventListener('click', () => {
 */
 
 $(document).ready(function() {
+   $('.js--scroll-to-highlight').click(function() {
+      $('html, body').animate(
+         { scrollTop: $('.js--section-highlight').offset().top },
+         1000
+      );
+   });
    $('.js--scroll-to-maestros').click(function() {
       $('html, body').animate(
          { scrollTop: $('.js--section-maestros').offset().top },
@@ -33,6 +41,7 @@ $(document).ready(function() {
          } else {
             $('.sticky .nav').css('opacity', '0');
             $('nav').removeClass('sticky');
+            $('.nav').css('opacity', '1');
          }
       },
       { offset: '70px' }
@@ -45,6 +54,7 @@ $(document).ready(function() {
          } else {
             // $('#ScrollToTop').fadeTo('slow', 0.8);
             $('#ScrollToTop').css('opacity', '0');
+            $('.nav').css('opacity', '1');
          }
       },
       { offset: '300px' }
