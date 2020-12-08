@@ -2,7 +2,10 @@ import React from "react";
 import { useForm } from "react-hook-form";
 
 // Firebase
-import { signInWithGoogle } from "../firebase/firebase.utils";
+import {
+    signInWithGoogle,
+    signInWithFacebook,
+} from "../firebase/firebase.utils";
 
 const Login = () => {
     const { register, reset, handleSubmit } = useForm();
@@ -35,6 +38,10 @@ const Login = () => {
 
             <input type="submit" value="login"></input>
             <input onClick={signInWithGoogle} value="login with google"></input>
+            <input
+                onClick={signInWithFacebook}
+                value="login with facebook"
+            ></input>
         </form>
     );
 };
